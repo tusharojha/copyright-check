@@ -1,0 +1,16 @@
+{
+  "name": "copyrightcheckaction",
+  "version": "1.0.0",
+  "description": "A GitHub Action to check first 5 lines of a glob promise.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm i && node ."
+  },
+  "author": "tusharojha",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "glob": "^7.2.0"
+  }
+}

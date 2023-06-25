@@ -1,0 +1,18 @@
+name: 'Copyright Comment Check'
+description: 'Check if all files are containint copyright information'
+inputs:
+  path:
+    description: 'In which path you wanna check'
+    required: true
+    default: 'src/**/*.rs'
+  copyrightPath:
+    description: 'For what should the action check'
+    required: true
+    default: 'copyright.txt'
+  exclude:
+    description: 'Path to exclude from the check'
+    required: true
+    default: 'runtime'
+runs:
+  using: 'node12'
+  main: 'index.js'
